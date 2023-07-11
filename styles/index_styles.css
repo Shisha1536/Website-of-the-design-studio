@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "NunitoSans";
+    font-size: normal;
+    font-weight: medium;
+    src: local("NunitoSans"),
+        url("../fonts/NunitoSans-Regular.woff2") format("woff2"),
+        url("../fonts/NunitoSans-Regular.woff") format("woff")
+}
+@font-face {
+    font-family: "YesevaOne";
+    font-size: normal;
+    font-weight: medium;
+    src: local("YesevaOne"),
+        url("../fonts/YesevaOne-Regular.woff2") format("woff2"),
+        url("../fonts/YesevaOne-Regular.woff") format("woff")
+}
