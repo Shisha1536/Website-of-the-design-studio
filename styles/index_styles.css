@@ -2,7 +2,7 @@
     font-family: "NunitoSans";
     font-size: normal;
     font-weight: medium;
-    src: local("NunitoSans"),
+    src: local('Nunito Sans Regular'), local('NunitoSans-Regular'),
         url("../fonts/NunitoSans-Regular.woff2") format("woff2"),
         url("../fonts/NunitoSans-Regular.woff") format("woff")
 }
@@ -10,7 +10,79 @@
     font-family: "YesevaOne";
     font-size: normal;
     font-weight: medium;
-    src: local("YesevaOne"),
+    src: local('Yeseva One Regular'), local('YesevaOne-Regular'),
         url("../fonts/YesevaOne-Regular.woff2") format("woff2"),
         url("../fonts/YesevaOne-Regular.woff") format("woff")
+}
+html {
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+.header {
+    background: #131313;
+    display: flex;
+    justify-content: center;
+}
+.header__div {
+    display: flex;
+    height: 83px;
+    justify-content: center;
+    align-items: center;
+    width: 1256px;
+}
+.header__span_name,
+.header__span_tel{
+    color: #E3B873;
+    font-family: Nunito Sans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.header__span_name {
+    text-transform: uppercase;
+    width: 179.745px;
+    margin-right: 95.47px;
+}
+.header__span_tel {
+    text-decoration-line: underline;
+    width: 126px;
+    margin: 0 45px 0 67.36px;
+    display: flex;
+    justify-content: end;
+}
+.header__list {
+    list-style: none;
+    display: flex;
+    gap: 47.09px;
+    width: 581.43px;
+    justify-content: center;
+}
+.header__item {
+   text-decoration: none;
+    color: #FFF;
+    font-family: Nunito Sans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.button-1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Nunito Sans;
+    font-size: 11px;
+    /*font-style: italic;*/
+    font-weight: 400;
+    line-height: normal;
+}
+.header__button {
+    width: 161px;
+    height: 37px;
+    border-radius: 2px;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.20);
+    text-transform: uppercase;
 }
