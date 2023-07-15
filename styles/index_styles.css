@@ -302,29 +302,29 @@ h1,h2,h3 {
     cursor: pointer;
     display: flex;
     align-items: center;
-  }
-  .checkbox{
+}
+.checkbox{
     display: none;
-  }
-  .fake{
+}
+.fake{
     display: inline-flex;
     width: 18px;
     height: 18px;
     background: #E3B873;
     color: #fff;
     justify-content: center;
-  }
-  .fake::before{
+}
+.fake::before{
     content:"\2714";
     opacity: 0;
     transition: .2s;
-  }
-  .checkbox:checked + .fake::before{
+}
+.checkbox:checked + .fake::before{
     opacity: 1;
-  }
-  .first-checkbox {
+}
+.first-checkbox {
     margin-top: 37px;
-  }
-  .text {
+}
+.text {
     margin-left: 9px;
-  }
+}
