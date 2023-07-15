@@ -207,9 +207,6 @@ h1,h2,h3 {
     line-height: 138.6%
     text-transform: uppercase;
 }
-
-
-
 .slider {
     width: 679px;
     height: 482px;
@@ -238,3 +235,96 @@ h1,h2,h3 {
     text-decoration: none;
     color: #eee;
 }
+.main__section_3-div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -298px;
+}
+.main__section_3-h3 {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;;
+    line-height: 138.6%;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+.main__section_3-video {
+    width: 817px; 
+    height: 434px;
+    margin-top: 31px;
+    margin-bottom: 62.5px;
+}
+.main__section_3-p {
+    color: #363636;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 204.6%;
+    max-width: 681px;
+    margin-top: 34px;
+    margin-bottom: 94px;
+}
+.main__section_3-button {
+    font-size: 13px;
+    line-height: 204.6%;
+    text-transform: uppercase;
+    background: #E3B873;
+    width: 200px;
+    height: 51px;
+    border: 1px solid #FFF;
+    border-radius: 2px;
+    margin-left: 49px;
+}
+.main__section_3-div2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main__section_3-input {
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    width: 231px;
+    color: #363636;
+    font-size: 14px;
+    line-height: 163.68%;
+}
+.input3-1 {
+    margin-right: 58px;
+}
+.main__section_3-lb {
+    color: rgba(54, 54, 54, 0.50);
+    font-size: 13px;
+    line-height: 163.68%;
+}
+.label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .checkbox{
+    display: none;
+  }
+  .fake{
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+  }
+  .fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+  }
+  .checkbox:checked + .fake::before{
+    opacity: 1;
+  }
+  .first-checkbox {
+    margin-top: 37px;
+  }
+  .text {
+    margin-left: 9px;
+  }
