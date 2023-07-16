@@ -204,7 +204,7 @@ h1,h2,h3 {
     color: rgba(255, 255, 255, 0.30);
     font-size: 14px;
     font-style: normal;
-    line-height: 138.6%
+    line-height: 138.6%;
     text-transform: uppercase;
 }
 .slider {
