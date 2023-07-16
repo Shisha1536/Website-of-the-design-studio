@@ -249,10 +249,6 @@ h1,h2,h3 {
     text-transform: uppercase;
     margin-bottom: 13px;
 }
-.iframe {
-    margin-top: 31px;
-    margin-bottom: 62.5px;
-}
 .youtube {
     background-position: center;
     background-repeat: no-repeat;
@@ -352,4 +348,75 @@ h1,h2,h3 {
 }
 .text {
     margin-left: 9px;
+}.main__section_4-div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 148px;
+    padding-bottom: 242px;
+}
+.main__section_4-h3 {
+    font-size: 20px;
+    line-height: 138.6%;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+.main__section_4-ToW {
+    display: flex;
+    margin-top: 31px;
+    margin-bottom: 124px;
+    gap: 30px;
+}
+.main__section_4-img {
+    width: 392px;
+    height: 421px;
+    position: relative;
+}
+.main__section_4-ALoW {
+    width: 330px;
+    height: 286px;
+    background:rgb(252, 252, 252);
+    padding: 25px 29px 49px 34px;
+    margin-bottom: -159px;
+    position: absolute;
+    z-index: 1;
+}
+.main__section_4-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.main__section_4-price-m2 {
+    width: 228px;
+    display: flex;
+    background: #E3B873;
+    box-shadow: 5px 5px 10px 0px rgba(227, 184, 115, 0.30);
+    color: #FFF;
+    font-family: Yeseva One;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.6%;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 2;
+    padding: 17px 0;
+    justify-content: center;
+    margin-left: -34px;
+    margin-top: 23px;
+}
+.main__section_4-h3-item {
+    color: #363636;
+    font-size: 18px;
+    line-height: 138.6%;
+    margin-bottom: 13px;
+}
+.main__section_4-list {
+    color: #959595;
+    font-size: 13px;
+    height: 178px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
