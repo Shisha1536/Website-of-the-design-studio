@@ -452,7 +452,6 @@ h1,h2,h3 {
     font-size: 14px;
     line-height: 19px;
 }
-  
 .main__section_4-list2-item:before {
     counter-increment: myCounter;
     content:counter(myCounter);
@@ -475,4 +474,52 @@ h1,h2,h3 {
     align-items: center;
     width: 506px;
 }
-  
+.main__section_4-h3-labekl {
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    line-height: 143.22%;
+    margin-bottom: 39px; 
+}
+.main__section_4-label {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 13px;
+    line-height: 163.68%;
+    margin-bottom: 48px;
+}
+.main__section_4-input {
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    width: 408px;
+    background: transparent;
+    margin-top: 7px;
+    padding-bottom: 4px;
+}
+.main__section_4-input::placeholder {
+    color: #FFF;    
+}
+.main__section_4-label-ck {
+    color: #FFF;
+}
+.label2 {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+}
+.first-checkbox2 {
+    margin-bottom: 39px;
+    margin-top: -32px;
+}
+.main__section_4-botton {
+    width: 213px;
+    height: 51px;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.15);
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+    line-height: 163.68%;
+    text-transform: uppercase;
+}  
