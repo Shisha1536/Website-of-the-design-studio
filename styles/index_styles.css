@@ -511,6 +511,7 @@ h1,h2,h3 {
 .first-checkbox2 {
     margin-bottom: 39px;
     margin-top: -32px;
+    align-self: flex-start;
 }
 .main__section_4-botton {
     width: 213px;
@@ -522,4 +523,16 @@ h1,h2,h3 {
     font-size: 13px;
     line-height: 163.68%;
     text-transform: uppercase;
+    align-self: end;
+}
+.main__section_4-Piggy_bank {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 160px;
+    gap: 25px;
+    margin-top: 51px;
+    color: #E3B873;
+    font-size: 18px;
+    line-height: 143.22%;
 }  
