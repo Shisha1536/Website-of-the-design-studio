@@ -557,9 +557,11 @@ h1,h2,h3 {
 .main__section_5-grid-item:nth-of-type(3){
     grid-row: span 2;
 }
-.main__section_5-grid-item:nth-of-type(1),
-.main__section_5-grid-item:nth-of-type(4){
+.main__section_5-grid-item:nth-of-type(1) {
     margin-top: -41px;
+}
+.main__section_5-grid-item:nth-of-type(4) {
+    margin-top: -76px;
 }
 .main__section_5-grid-item:nth-of-type(2),
 .main__section_5-grid-item:nth-of-type(3){
@@ -567,7 +569,6 @@ h1,h2,h3 {
 }
 .main__section_5-styles {
     width: 411px;
-    margin-left: 99px;
     margin-right: 77px;
     margin-top: 137px;
 }
@@ -586,4 +587,85 @@ h1,h2,h3 {
     display: flex;
     flex-direction: column;
     gap: 25px; 
+}
+.main__section_6-div1 {
+    padding-top: 110.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.main__section_6-h3 {
+    color: #181818;
+    font-size: 20px;
+    line-height: 138.6%;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+.main__section_6-p {
+    color: #363636;
+    text-align: center;
+    font-size: 18px;
+    line-height: 163.68%;
+    margin-top: 24px;
+    margin-bottom: 39px;
+}
+.main__section_6-BoR {
+    display: flex;
+    flex-direction: row;
+    gap: 54px;
+    margin: 39px 0 382px 0;
+    justify-content: center;
+    align-items: center;
+}
+.main__section_6-feedback-photo-h3 {
+    display: flex;
+    color: #181818;
+    font-size: 18px;
+    line-height: 127.05%;
+    gap: 23px;
+    align-items: center;
+    margin-bottom: 22px;
+}
+.main__section_6-feedback-photo {
+    border-radius: 50%;
+}
+.main__section_6-feedback {
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.04);
+    position: relative;
+    padding: 24px 32px 0 20px;
+}
+.main__section_6-feedback-p {
+    color: #959595;
+    font-size: 13px;
+    line-height: 180%;
+    margin-bottom: 63px; 
+}
+.main__section_6-feedback-span {
+    display: flex;
+    width: 294px;
+    height: 54px;
+    background: #E3B873;
+    box-shadow: 5px 5px 20px 0px rgba(227, 184, 115, 0.50);
+    color: #FFF;
+    font-family: Yeseva One;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.6%;
+    padding: 11px 0 11.65px 17.36px;
+    margin-bottom: -27px;
+    align-items: center;
+}
+.main__section_6-feedback-svg1 {
+    margin-right: 15.4px;
+}
+.main__section_6-feedback-svg2 {
+    margin-left: 14px;
+    margin-right: 17.3px;
+}
+.main__section_6-feedback-svg3 {
+    margin-right: 15px;
 }
