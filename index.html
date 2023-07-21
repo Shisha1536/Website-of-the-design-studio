@@ -32,7 +32,7 @@
                 <div class="main__section_1-div1">
                     <h1 class="main__section_1-heading">Turnkey Repair in the <br>city of <span class="main__section_1-heading-color">Rostov-on-Don</span></h1>
                     <p class="main__section_1-text1">Get ready-made turnkey repairs on time <br>with work time saving up to 45 days and 20% from <br>cost of materials due to the organization of work</p>
-                    <div>
+                    <div class="main__section_1-div-botton">
                         <button class="main__section_1-button1 button-1" type="button">CALCULATE THE COST</button>
                         <button class="main__section_1-button2 button-1" type="button">SUBMIT YOUR APPLICATION</button>
                     </div>
@@ -65,20 +65,24 @@
                             </li>
                         </ul>
                     </div>
-                    <div style="color: white; display: flex; font-size: 30px; gap: 10px;">
+                    <div class="arrows">
                         <a class="main__section_2-arrow" href="#slide-1">&#10229;</a>
                         <span>·</span>
                         <span>·</span>
                         <a class="main__section_2-arrow" href="#slide-2">&#10230;</a>
                     </div>
                 </div>
-                <div>
+                <div class="main__section_2-div2">
                     <ul class="main__section_2-list">
                         <li><a class="main__section_2-list-item" href="">Rostov-on-Don, Admiral</a></li>
                         <li><a class="main__section_2-list-item" href="">Sochi Thieves</a></li>
                         <li><a class="main__section_2-list-item" href="">Rostov-on-Don Patriotic</a></li>
                     </ul>
-                    <div class="slider">   
+                    <div class="slider">
+                        <div class="arrows2">
+                            <a class="main__section_2-arrow" href="#slide-1">&#8249;</a>
+                            <a class="main__section_2-arrow" href="#slide-2">&#8250;</a>
+                        </div>   
                         <div class="slides">
                           <div class="main__section_2-img" id="slide-1"><img src="./img/png/image 2.1 (1).png" alt="Зона отдыха" width="679px" height="482px"></div>
                           <div class="main__section_2-img" id="slide-2"><img src="./img/png/image 2 (1).png" alt="Зона отдыха" width="679px" height="482px"></div>
@@ -130,6 +134,7 @@
                                 iframe.style.width  = this.style.width;
                                 iframe.style.height = this.style.height;
                                 iframe.style.margin = this.style.margin;
+                                iframe.id = this.id;
                                 // Заменяем начальное изображение (постер) на iFrame
                                 this.parentNode.replaceChild(iframe, this);
                             }
@@ -236,7 +241,7 @@
             </div>
         </section>
         <section class="main__section_5">
-            <div class="filtr"></div>
+            <div class="filtr main__section_5-filtr"></div>
             <div class="main__section_5-div1 сontent_boundaries">
                 <div class="main__section_5-styles">
                     <h2 class="main__section_5-h2">We realize your <br>wildest fantasies</h2>
@@ -254,13 +259,56 @@
                         <li class="main__section_5-item">Eclecticism</li>
                     </ul>
                 </div>
-                <div class="main__section_5-list-img">
+                <div class="main__section_5-list-img">  
                     <img class="main__section_5-grid-item" src="./img/png/image 5.1.png" alt="Картинка" style="height: 558px; object-fit: cover; width: 354px;">
                     <img class="main__section_5-grid-item" src="./img/png/image 5 (2).png" alt="Картинка" width="354px" height="275px">
                     <img class="main__section_5-grid-item" src="./img/png/image 5 (3).png"" alt="Картинка" width="354px" height="625px">
-                    <img class="main__section_5-grid-item" src="./img/png/image 5 (1).png" alt="Картинка" width="354px" height="349px">
-                    
+                    <img class="main__section_5-grid-item" src="./img/png/image 5 (1).png" alt="Картинка" width="354px" height="349px">   
                 </div>
+                <div class="main__section_5-list-img2">
+                    <div class="mySlides fade">
+                        <img class="main__section_5-grid-item" src="./img/png/image 5.1.png" alt="Картинка" style="max-height: 558px; object-fit: cover; width: 354px;">
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="main__section_5-grid-item" src="./img/png/image 5 (2).png" alt="Картинка" width="354px" height="275px">
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="main__section_5-grid-item" src="./img/png/image 5 (3).png"" alt="Картинка" width="354px" height="625px">
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="main__section_5-grid-item" src="./img/png/image 5 (1).png" alt="Картинка" width="354px" height="349px"> 
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                </script>
             </div>
         </section>
        <section class="main__section_6">
@@ -321,7 +369,7 @@
                 <a href=""><img src="./img/svg/Mail.svg" alt="E-mail"></a>
                 <a href=""><img src="./img/svg/instagram.svg" alt="instagram"></a>
             </div>
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aab1771016ad624f2f7228e694576b5dc1e7430a1b519119cab45b743a3f93618&amp;width=925&amp;height=465&amp;lang=ru_RU&amp;scroll=true"></script>
+            <script class="footer__script_map" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aab1771016ad624f2f7228e694576b5dc1e7430a1b519119cab45b743a3f93618&amp;width=925&amp;height=465&amp;lang=ru_RU&amp;scroll=true&amp;id=footer__script_map"></script>
         </div>
         <div class="footer__header header__div">
             <span class="footer__header_span header__span_name">IC "Repair Design Project"</span>
